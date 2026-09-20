@@ -1,0 +1,28 @@
+{
+  "posts": [],
+  "views": [
+    {
+      "id": 1,
+      "page": "/",
+      "device": "Desktop",
+      "browser": "Chrome",
+      "created_at": "2026-09-20T07:20:38.897Z"
+    },
+    {
+      "id": 2,
+      "page": "/",
+      "device": "Desktop",
+      "browser": "Chrome",
+      "created_at": "2026-09-20T07:58:54.788Z"
+    },
+    {
+      "id": 3,
+      "page": "/",
+      "device": "Desktop",
+      "browser": "Chrome",
+      "created_at": "2026-09-20T08:18:48.748Z"
+    }
+  ],
+  "projects": [],
+  "games": []
+}

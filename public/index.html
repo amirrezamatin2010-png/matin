@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MATIN — Personal Tech Space</title>
+<meta name="description" content="MATIN personal technology portfolio and media space">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div>
+<header class="topbar">
+  <a class="logo" href="/">MATIN<span>.</span></a>
+  <nav><a href="#feed">فید</a><a href="#projects">پروژه‌ها</a><a href="#games">بازی‌ها</a><a href="#about">درباره من</a></nav>
+  <div class="top-actions"><button class="admin-link" id="loginBtn">ورود / ثبت‌نام</button><a class="admin-link" href="/admin.html">پنل مدیریت</a></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">PERSONAL • TECHNOLOGY • LUXURY</div>
+    <h1>دنیای <span>MATIN</span></h1>
+    <p>یک فضای شخصی برای پروژه‌ها، اپلیکیشن‌ها، بازی‌ها، موسیقی و چیزهایی که می‌سازم.</p>
+    <div class="hero-actions"><a class="btn primary" href="#projects">مشاهده پروژه‌ها</a><a class="btn" href="#feed">ورود به فید</a></div>
+  </div>
+  <div class="orb"><div class="orb-inner">M</div></div>
+</section>
+
+<section id="feed" class="section">
+  <div class="section-head"><div><small>LIVE FEED</small><h2>آخرین پست‌ها</h2></div></div>
+  <div id="posts" class="feed"></div>
+</section>
+
+<section id="projects" class="section">
+  <div class="section-head"><div><small>MY WORK</small><h2>پروژه‌ها و اپلیکیشن‌ها</h2></div></div>
+  <div id="projectsGrid" class="grid"></div>
+</section>
+
+<section id="games" class="section">
+  <div class="section-head"><div><small>GAME CENTER</small><h2>بازی‌ها</h2></div></div>
+  <div id="gamesGrid" class="grid"></div>
+</section>
+
+<section id="about" class="section about">
+  <small>ABOUT MATIN</small><h2>ساختن، یادگرفتن، تجربه‌کردن.</h2>
+  <p>این سایت فضای شخصی MATIN است؛ جایی برای نمایش پروژه‌ها، اپ‌ها، بازی‌ها و محتوای شخصی.</p>
+</section>
+
+<section id="account" class="section account-section">
+  <div class="section-head"><div><small>YOUR ACCOUNT</small><h2>حساب MATIN</h2></div></div>
+  <div class="account-card card">
+    <div id="accountLoggedOut">
+      <p>با شماره موبایل وارد شو. کد تأیید یک‌بارمصرف به شماره‌ات ارسال می‌شود.</p>
+      <div class="form-row"><input id="phone" inputmode="tel" placeholder="شماره موبایل"><button class="btn primary" id="sendOtp">ارسال کد</button></div>
+      <div class="form-row" id="otpRow" hidden><input id="otp" inputmode="numeric" maxlength="6" placeholder="کد ۶ رقمی"><button class="btn" id="verifyOtp">تأیید و ورود</button></div>
+      <p id="otpNote" class="note"></p>
+    </div>
+    <div id="accountLoggedIn" hidden>
+      <h3>👤 حساب من</h3><p id="accountPhone"></p>
+      <div class="permission-grid">
+        <button class="permission" id="galleryBtn">🖼️ انتخاب از گالری</button>
+        <button class="permission" id="cameraBtn">📷 دوربین</button>
+        <button class="permission" id="micBtn">🎙️ میکروفون / ضبط</button>
+        <button class="permission" id="contactsBtn">👥 انتخاب مخاطب</button>
+      </div>
+      <input id="galleryInput" type="file" accept="image/*,video/*" multiple hidden>
+      <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden>
+      <p class="note">MATIN فقط فایل‌هایی را که خودت انتخاب می‌کنی دریافت می‌کند. دسترسی دائمی به گالری، مخاطبین یا تماس‌ها ایجاد نمی‌شود.</p>
+      <button class="btn" id="logoutBtn">خروج</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> MATIN — Personal Technology Space</footer>
+<script src="/app.js"></script>
+</body>
+</html>
