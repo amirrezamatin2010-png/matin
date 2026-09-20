@@ -1,4 +1,4 @@
-const express=require("express");
+0const express=require("express");
 const path=require("path");
 const fs=require("fs");
 const multer=require("multer");
@@ -174,4 +174,6 @@ app.delete("/api/admin/game/:id",admin,(req,res)=>{
   res.json({ok:true});
 });
 
-app.listen(PORT,()=>console.log(`MATIN running: http://localhost:${PORT}`));
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`MATIN running on port ${PORT}`);
+});
